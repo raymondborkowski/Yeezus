@@ -1,0 +1,28 @@
+{
+"manifest_version": 2,
+    "name": "God -> Kanye",
+    "description": "Kanye is God",
+    "version": "1.0",
+    "icons":
+    {
+          "128": "images/icon128.png",
+          "16": "images/icon16.png",
+          "48": "images/icon48.png"
+    },
+    "browser_action": 
+    {
+    "default_title": "<IM> Incognito Window",
+    "default_icon": "images/icon.png"
+     },
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*/*"
+            ],
+            "js": [
+                "content.js"
+            ],
+            "run_at": "document_end"
+        }
+    ]
+}
